@@ -1,7 +1,7 @@
 let connection;
-
+                    // receive parameter from play.js
 const setupInput = (conn) => {
-  connection = conn;
+  connection = conn; 
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
