@@ -1,5 +1,8 @@
+const {message, EXIT, MOVE_UP_KEY, MOVE_LEFT_KEY, MOVE_DOWN_KEY, MOVE_RIGHT_KEY}  = require("./constants");
+
 let connection;
-                    // receive parameter from play.js
+
+// receive parameter from play.js
 const setupInput = (conn) => {
   connection = conn; 
   const stdin = process.stdin;
@@ -11,26 +14,27 @@ const setupInput = (conn) => {
 };
 
 const handleUserInput = function (data) {
-  if (data === '\u0003') { //ctrl -c keyboard
+   
+  if (data === EXIT) { //ctrl -c keyboard
     process.exit(); 
-  } else if (data === 'w') {
+  } else if (data === MOVE_UP_KEY) {
     connection.write("Move: up");
-  } else if (data === 'a') {
+  } else if (data === MOVE_LEFT_KEY) {
     connection.write("Move: left");
-  } else if (data === 's') {
+  } else if (data === MOVE_DOWN_KEY) {
     connection.write("Move: down");
-  } else if (data === 'd') {
+  } else if (data === MOVE_RIGHT_KEY) {
     connection.write("Move: right");
      
      //send a mensage to others if you press the letter in the game
   } else if (data === 'r') {  
-    connection.write("Say: let's goooo");
+    connection.write(message.r);
   } else if (data === 't') {  
-    connection.write("Say: it's growing up");
+    connection.write(message.t);
   } else if (data === 'y') {  
-    connection.write("Say: almost there");
+    connection.write(message.y);
   } else if (data === 'e') {  
-    connection.write("Say: It's Ed here");
+    connection.write(message.e);
   };
 
 }
