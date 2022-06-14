@@ -29,7 +29,7 @@ const connect = function () {
   //  }, 4000);
   // });
 
-  return conn;
+  return conn;  //is the output from connect function
 };
 
 module.exports = connect;
