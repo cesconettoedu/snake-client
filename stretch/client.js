@@ -25,8 +25,8 @@ const connect = function() {
   
   conn.on("connect", () => {
     // just asking players name to not be a fixed one
-    rl.question(`What's your name? `, (answer) => {
-      console.log(`${answer.trim()}  is connecting ...`);
+    rl.question(`What's your name? `, (playerName) => {
+      console.log(`${playerName.trim()}  is connecting ...`);
       // just animation to pretend that's loading
       const spinner2 = ("-\|/-\|/-\|/-\|/-\|/-\|/-");
       for (let i = 0; i < spinner2.length; i ++) {
@@ -38,7 +38,7 @@ const connect = function() {
       }
 
       setTimeout(() => {
-        console.log(`${answer.trim()} successfully connected to game server.`);
+        console.log(`${playerName.trim()} successfully connected to game server.`);
       }, 1000);
       setTimeout(() => {
         console.log('You can start PLAY!');
@@ -46,11 +46,11 @@ const connect = function() {
       
 
       const connections = []; //
-      connections.push(answer); //
+      connections.push(playerName); //
 
       
 
-      conn.write(`Name: ${answer}`);
+      conn.write(`Name: ${playerName}`);
     });
   });
  
