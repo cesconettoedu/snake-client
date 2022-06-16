@@ -30,12 +30,12 @@ send message to others player press:
     e = you can do it
 
 
-Tip: if you want play the real one, replace one file: constants.js 
+Tip1: if you want play the real one, replace one file: constants.js 
     
-    snake-client/stretch/snek-multiplayer/constants.js
+    stretch/snek-multiplayer/src/constants.js
 
     //copy the file that is here on github at the address above and replace it with the original in your cpu in the following directory:
 
     snek-multiplayer/src/constants.js
 
- 
+Tip2: start put your name....
