@@ -1,19 +1,19 @@
-const IP ='10.0.2.15'
-const PORT = 50541
+const IP = 'localhost';
+const PORT = 50541;
 
 
 
-const EXIT = '\u0003'
-const MOVE_UP_KEY = 'w'
-const MOVE_LEFT_KEY = 'a'
-const MOVE_DOWN_KEY = 's'
-const MOVE_RIGHT_KEY = 'd'
+const EXIT = '\u0003';
+const MOVE_UP_KEY = 'w';
+const MOVE_LEFT_KEY = 'a';
+const MOVE_DOWN_KEY = 's';
+const MOVE_RIGHT_KEY = 'd';
 
 const message  = {
   r: "Say: let's goooo",
   t: "Say: it's growing up",
   y: "Say: almost there",
-  e: "Say: It's Ed here"
+  e: "Say: you can do it"
 };
 
 
