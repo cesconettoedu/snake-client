@@ -57,4 +57,4 @@ const connect = function() {
   return conn;  //is the output from connect function
 };
 
-module.exports = connect;
+module.exports = connect
