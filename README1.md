@@ -7,23 +7,28 @@ This is simply a multiplayer take on the genre.
 Before you can run this client, you will need to be running the server side which you can download and install from here.
 
 In the Terminal go to Directory that you want to install.
+
     git clone https://github.com/lighthouse-labs/snek-multiplayer.git snek-multiplayer
     cd snek-multiplayer
     npm install
     npm run play
 
 Use another Terminal to run the player:
+
     git clone git@github.com:cesconettoedu/snake-client.git snake-client
     cd snake-client
     node play.js
 
-commands inside the game:
+Commands inside the game:
+
+
     w = Move: up
     a = Move: left
     s = Move: down
     d = Move: right
 
-send message to others player press:
+Send message to others player press:
+
     r = let's goooo
     t = it's growing up
     y = almost there
